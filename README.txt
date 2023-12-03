@@ -1,0 +1,29 @@
+這是針對前面Google Map店家評論爬蟲以及FoodPanda全台餐點爬蟲的csv進行資料清整
+1.Shop_Data_Cleaning清整內容：(輸出cleaned_data_FoodPanda_1.csv)
+刪除菜價小於30元的品項
+刪除擁有相同菜名的品項
+將地址列的奇怪字元清整
+刪除分類項是空的品項
+將所有分類進行歸類，整理為8大項
+
+2.Google_Data_Cleaning清整內容：(執行Wash_GoogleComment.py)(輸出cleaned_data_Google_1.csv)
+去除標點符號和特殊符號
+將所有文字轉為小寫
+斷句結疤處理，去除停用詞
+
+3.Google店家評論特徵工程(執行Feature_analys_Google_nT.py)(輸出Feature_analys_1.csv)
+讀取經結疤處理過的文字，抓取特徵做店家分類
+分為美味、服務、環境三大類
+
+4.最後才執行頁首的Wash_flipped.py
+因需套入模型深度學習做分析，將所有資料合併，再次清整
+下方會再看到如同shop_Data_Cleaning做的事情是因為我這邊是讀取raw data再清一次合併，並增加價格級距的欄位
+整理成方便機器學習的表格
+同步將前面爬到的餐點圖片做特徵遮蓋、像數調整、翻轉處理
+
+其中做了兩次刪除的動作
+第一次刪除圖片資料夾及csv檔中互相找不到對應檔的資料(清除空間)
+第二次將圖片像數一樣的資料清除，只留一筆
+以上皆完成才做圖片翻轉
+
+5.最後使用Tableau做圖表分析

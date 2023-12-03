@@ -1,0 +1,9 @@
+早午餐：Breakfast/Sandwiches & Toast
+飲料：Drinks/Coffee
+點心：Desserts/Dou Hua/Dount/Cakes
+台式：Taiwanese/Lu wei/Snacks/TW Fried Chicken/Fried Rice/Chinese/Hong Kong/Dumpling/Congee/Healthy
+素食：Vegetarian
+美式：American/Pizza/Steak/Burgers
+其他異國：Internationl/Southeast Asian/Curry
+日韓風：Japanese/Korean
+
