@@ -1,17 +1,17 @@
 這是針對前面Google Map店家評論爬蟲以及FoodPanda全台餐點爬蟲的csv進行資料清整
-1.Shop_Data_Cleaning清整內容：(輸出cleaned_data_FoodPanda_1.csv)
+1.Shop_Data_Cleaning清整內容：
 刪除菜價小於30元的品項
 刪除擁有相同菜名的品項
 將地址列的奇怪字元清整
 刪除分類項是空的品項
 將所有分類進行歸類，整理為8大項
 
-2.Google_Data_Cleaning清整內容：(執行Wash_GoogleComment.py)(輸出cleaned_data_Google_1.csv)
+2.Google_Data_Cleaning清整內容：(執行Wash_GoogleComment.py)
 去除標點符號和特殊符號
 將所有文字轉為小寫
 斷句結疤處理，去除停用詞
 
-3.Google店家評論特徵工程(執行Feature_analys_Google_nT.py)(輸出Feature_analys_1.csv)
+3.Google店家評論特徵工程(執行Feature_analys_Google_nT.py)
 讀取經結疤處理過的文字，抓取特徵做店家分類
 分為美味、服務、環境三大類
 
